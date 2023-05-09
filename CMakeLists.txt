@@ -39,3 +39,13 @@ endif()
 
 enable_testing()
 add_test(NAME testFilterIp COMMAND testIp)
+
+
+install(TARGETS ${nameB} RUNTIME DESTINATION bin)
+
+set(CPACK_GENERATOR DEB)
+set(CPACK_PACKAGE_VERSION_MAJOR "0")
+set(CPACK_PACKAGE_VERSION_MINOR "0")
+set(CPACK_PACKAGE_VERSION_PATCH "1")
+set(CPACK_PACKAGE_CONTACT example@example.com)
+include(CPack)
