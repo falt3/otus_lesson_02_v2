@@ -15,7 +15,7 @@ BOOST_AUTO_TEST_CASE(file_ip)
     std::vector<ClIp> ipMas;
 
     // 1. загружаем данные из файла: ip_filter.tsv
-    std::fstream fs("../ip_filter/ip_filter.tsv", std::fstream::in);
+    std::fstream fs("../test_files/ip_filter.tsv", std::fstream::in);
     BOOST_TEST(fs.is_open());
     if (fs.is_open()) {
         inputData(ipMas, fs);
